@@ -1,5 +1,6 @@
 from MathOperations.addition import Addition
 from MathOperations.subtraction import Subtraction
+from StatsticOperations.mean import Mean
 
 
 class Calculator:
@@ -14,4 +15,9 @@ class Calculator:
 
     def Difference(self, a, b):
         self.Result = Subtraction.difference(a, b)
+        return self.Result
+
+    def Mean(self):
+        aList = [1,2,3,4]
+        self.Result = Mean.Mean1(aList)
         return self.Result
