@@ -4,6 +4,8 @@ from StatsticOperations.mean import Mean
 from StatsticOperations.median import Median
 from StatsticOperations.mode import Mode
 from StatsticOperations.variance import Variance
+from StatsticOperations.standardDeviation import StandardDeviation
+
 class MyStatsCase(unittest.TestCase):
 
     def test_StatisticOperations_Mean(self):
@@ -23,3 +25,6 @@ class MyStatsCase(unittest.TestCase):
         mean = Mean.Mean1(aList)
         return  Variance.Variance1(aList)
 
+    def testStatisticOperations_StandardDeviation(self):
+        aList = [1,2,3,4]
+        return StandardDeviation.StandardDeviation1(aList)
