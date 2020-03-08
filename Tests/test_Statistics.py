@@ -1,20 +1,25 @@
 import unittest
 
-from StatsticOperations import mean
-from StatsticOperations import median
-from StatsticOperations import mode
-
+from StatsticOperations.mean import Mean
+from StatsticOperations.median import Median
+from StatsticOperations.mode import Mode
+from StatsticOperations.variance import Variance
 class MyStatsCase(unittest.TestCase):
 
     def test_StatisticOperations_Mean(self):
         aList = [1,2,3,4]
-        return mean.Mean.Mean1(aList)
+        return Mean.Mean1(aList)
 
     def test_StatsticOperations_Median(self):
         aList = [1,2,3,4]
-        return median.Median.Median1(aList)
+        return Median.Median1(aList)
 
     def test_StatisticOperations_Mode(self):
         aList = [1,2,2,3,4]
-        return mode.Mode.Mode1(aList)
+        return Mode.Mode1(aList)
+
+    def test_StatisticOperations_Variance(self):
+        aList = [1,2,3,4]
+        mean = Mean.Mean1(aList)
+        return  Variance.Variance1(aList)
 
