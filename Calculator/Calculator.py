@@ -4,6 +4,7 @@ from StatsticOperations.mean import Mean
 from StatsticOperations.median import Median
 from StatsticOperations.mode import Mode
 from StatsticOperations.variance import Variance
+from StatsticOperations.standardDeviation import StandardDeviation
 
 
 class Calculator:
@@ -39,3 +40,7 @@ class Calculator:
         aList = [1,2,3,4]
         self.Result = Variance.Variance1(aList)
         return self.Result
+
+    def StandardDeviation(self,aList):
+        aList = [1,2,3,4,5]
+        self.Result = StandardDeviation.StandardDeviation1(aList)
