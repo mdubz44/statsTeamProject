@@ -3,6 +3,7 @@ from MathOperations.subtraction import Subtraction
 from StatsticOperations.mean import Mean
 from StatsticOperations.median import Median
 from StatsticOperations.mode import Mode
+from StatsticOperations.variance import Variance
 
 
 class Calculator:
@@ -32,4 +33,9 @@ class Calculator:
     def Mode(self, aList):
         aList = [1,2,3,4]
         self.Result = Mode.Mode1(aList)
+        return self.Result
+
+    def Variance(self,aList):
+        aList = [1,2,3,4]
+        self.Result = Variance.Variance1(aList)
         return self.Result
