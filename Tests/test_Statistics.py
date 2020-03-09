@@ -1,10 +1,10 @@
 import unittest
-
 from StatsticOperations.mean import Mean
 from StatsticOperations.median import Median
 from StatsticOperations.mode import Mode
 from StatsticOperations.variance import Variance
 from StatsticOperations.standardDeviation import StandardDeviation
+from StatsticOperations.quartile import Quartile
 
 class MyStatsCase(unittest.TestCase):
 
@@ -28,3 +28,7 @@ class MyStatsCase(unittest.TestCase):
     def testStatisticOperations_StandardDeviation(self):
         aList = [1,2,3,4]
         return StandardDeviation.StandardDeviation1(aList)
+
+    def testStatistcOperations_Quartile(self):
+        aList = [1,2,3,4,5]
+        return Quartile.Quartile1(aList)
