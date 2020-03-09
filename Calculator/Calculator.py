@@ -1,3 +1,4 @@
+
 from MathOperations.addition import Addition
 from MathOperations.subtraction import Subtraction
 from StatsticOperations.mean import Mean
@@ -5,6 +6,7 @@ from StatsticOperations.median import Median
 from StatsticOperations.mode import Mode
 from StatsticOperations.variance import Variance
 from StatsticOperations.standardDeviation import StandardDeviation
+from StatsticOperations.quartile import Quartile
 
 
 class Calculator:
@@ -44,3 +46,7 @@ class Calculator:
     def StandardDeviation(self,aList):
         aList = [1,2,3,4,5]
         self.Result = StandardDeviation.StandardDeviation1(aList)
+
+    def Quartile(self, aList):
+        aList = [1,2,3,4,5]
+        self.Result = Quartile.Quartile1(aList)
