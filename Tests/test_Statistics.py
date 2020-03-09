@@ -5,6 +5,7 @@ from StatsticOperations.mode import Mode
 from StatsticOperations.variance import Variance
 from StatsticOperations.standardDeviation import StandardDeviation
 from StatsticOperations.quartile import Quartile
+from StatsticOperations.skewness import Skewness
 
 class MyStatsCase(unittest.TestCase):
 
@@ -32,3 +33,8 @@ class MyStatsCase(unittest.TestCase):
     def testStatistcOperations_Quartile(self):
         aList = [1,2,3,4,5]
         return Quartile.Quartile1(aList)
+
+    def testStatisticOperations_Skewness(self):
+        aList = [1,2,3,4,5]
+        return  Skewness.Skew(aList)
+
