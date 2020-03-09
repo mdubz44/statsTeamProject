@@ -7,6 +7,7 @@ from StatsticOperations.mode import Mode
 from StatsticOperations.variance import Variance
 from StatsticOperations.standardDeviation import StandardDeviation
 from StatsticOperations.quartile import Quartile
+from StatsticOperations.skewness import Skewness
 
 
 class Calculator:
@@ -50,3 +51,7 @@ class Calculator:
     def Quartile(self, aList):
         aList = [1,2,3,4,5]
         self.Result = Quartile.Quartile1(aList)
+
+    def Skewness(self, aList):
+        aList = [1,2,3,4,5]
+        self.Result = Skewness.Skew(aList)
