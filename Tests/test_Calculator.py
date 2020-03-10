@@ -69,6 +69,11 @@ class MyTestCase(unittest.TestCase):
         self.calculator.Skewness(aList)
         self.assertEqual(0, self.calculator.Result)
 
+    def test_calculator_access_ZScore_result(self):
+        aList = [1,2,3,4,5]
+        self.calculator.ZScore(aList)
+        self.assertEqual([-2.0, -1.0, 0.0, 1.0, 2.0], self.calculator.Result)
+
 
 if __name__ == '__main__':
     unittest.main()
