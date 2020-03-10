@@ -17,5 +17,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(6, Addition.sum(valuelist))
 
 
+
+
 if __name__ == '__main__':
     unittest.main()

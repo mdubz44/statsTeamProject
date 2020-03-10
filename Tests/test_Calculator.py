@@ -34,6 +34,41 @@ class MyTestCase(unittest.TestCase):
         self.calculator.Sum(calculator1.Sum(1, 2), calculator2.Difference(3, 4))
         self.assertEqual(2, self.calculator.Result)
 
+    def test_calculator_access_mean_result(self):
+        aList = [1,2,3,4]
+        self.calculator.Mean(aList)
+        self.assertEqual(2.5, self.calculator.Result)
+
+    def test_calculator_access_median_result(self):
+        aList = [1,2,2,3,4]
+        self.calculator.Median(aList)
+        self.assertEqual(2,self.calculator.Result)
+
+    def test_calculator_access_mode_result(self):
+        aList = [1,2,2,3,4]
+        self.calculator.Mode(aList)
+        self.assertEqual(2, self.calculator.Result)
+
+    def test_calculator_access_variance_result(self):
+        aList = [1,2,3,4,5]
+        self.calculator.Variance(aList)
+        self.assertEqual(2.5, self.calculator.Result)
+
+    def test_calculator_access_standardDeviation_result(self):
+        aList = [1,2,3,4,5]
+        self.calculator.StandardDeviation(aList)
+        self.assertEqual(1, self.calculator.Result)
+
+    def test_calculator_access_quartile_result(self):
+        aList = [1,2,3,4,5]
+        self.calculator.Quartile(aList)
+        self.assertEqual((2,3,4), self.calculator.Result)
+
+    def test_calculator_access_skewness_result(self):
+        aList = [1,2,3,4,5]
+        self.calculator.Skewness(aList)
+        self.assertEqual(0, self.calculator.Result)
+
 
 if __name__ == '__main__':
     unittest.main()
