@@ -5,8 +5,8 @@
 
 Todo: Add Population, Random Generator.
 
-InProgress: Statistc Operations
+InProgress:
 
 Review:
 
-Done: Project Outline
+Done: Project Outline, Statistical portion of project.
