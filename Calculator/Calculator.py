@@ -35,12 +35,12 @@ class Calculator:
         return self.Result
 
     def Mode(self, aList):
-        aList = [1,2,3,4]
+        aList = [1,2,2,3,4]
         self.Result = Mode.Mode1(aList)
         return self.Result
 
     def Variance(self,aList):
-        aList = [1,2,3,4]
+        aList = [1,2,3,4,5]
         self.Result = Variance.Variance1(aList)
         return self.Result
 
