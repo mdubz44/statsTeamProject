@@ -6,6 +6,7 @@ from StatsticOperations.variance import Variance
 from StatsticOperations.standardDeviation import StandardDeviation
 from StatsticOperations.quartile import Quartile
 from StatsticOperations.skewness import Skewness
+from StatsticOperations.zScore import ZScore
 
 class MyStatsCase(unittest.TestCase):
 
@@ -37,4 +38,8 @@ class MyStatsCase(unittest.TestCase):
     def testStatisticOperations_Skewness(self):
         aList = [1,2,3,4,5]
         return  Skewness.Skew(aList)
+
+    def testStatisticOperations_ZScore(self):
+        aList = [1,2,3,4,5]
+        return ZScore.ZScore1(aList)
 
