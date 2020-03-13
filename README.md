@@ -10,3 +10,5 @@ InProgress:
 Review:
 
 Done: Project Outline, Statistical portion of project.
+
+* [Outline](/outline.md)
