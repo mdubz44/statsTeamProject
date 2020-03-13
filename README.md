@@ -1,6 +1,6 @@
 # statsTeamProject
 
-#Ben,Mina,Matthew
+#Ben and Matthew
 #We need: Project Outline and To Do, In Progress, Review, and Done
 
 Todo: Add Population, Random Generator.
